@@ -14,4 +14,6 @@ var allLinks = document.querySelectorAll ('a');/*tworze tablice z wszystkimi lin
 for( var i=0; i<allLinks.length; i++) {
     var br = document.createElement('br');/*tworze element br*/
     allLinks[i].parentNode.insertBefore(br, allLinks[i].nextSibling);
-}/*insert.before jeste w wezle parent i przed tym wezlem musze stworzyc jeszcze jeden wezel; przed kolejnym rodzeństwem kolejenego linku i wstawia br
+    allLinks[i].removeAttribute('class');
+}
+/*insert.before jeste w wezle parent i przed tym wezlem musze stworzyc jeszcze jeden wezel; przed kolejnym rodzeństwem kolejenego linku i wstawia br*/
